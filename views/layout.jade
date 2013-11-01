@@ -1,0 +1,46 @@
+!!!
+html
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name='description', content='description of your site')
+        meta(name='author', content= "author of the site")
+
+        title= title
+
+        link(rel='stylesheet', href='css/master.css')
+    body
+        .borderwrap
+            .borders
+                .l
+                .r
+                .b
+                .t
+        #headwrap
+            header
+                nav.left
+                    a(href="#") About
+                    a(href="#") FAQ
+                h1
+                    1Pilot + HackMIT
+                nav.right
+                    a(href="#") Register
+                    a(href="#") Sponsor
+
+        .section.leader(style="background-image: url(img/pic2.jpg)")
+            .wrap
+                h1 You have 24 hours. <br>What will you build?
+                h3 Announcing the Pilot-hackMIT high school hackathon.<br> November 14-16, 2013 at MIT. 
+
+        .section.blue
+            .wrap
+                h2 Work together with the best engineers and designers in the Boston, from some of the top tech firms in the world, and turn your idea into a real app.
+
+        != content
+
+        //- add other scripts through require.js, not here
+        script(data-main="js/main", src="js/require.js")
+
+        //- this must be included for live reload to work in developement
+        //- it will be automatically ignored when deployed
+        != livereload
