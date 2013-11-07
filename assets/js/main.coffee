@@ -11,5 +11,5 @@ require.config
 
 require ['jquery'], ($) ->
     console.log 'jquery loaded (via assets/js/main.coffee)'
-    $(".borderwrap").height($(document).height())
+    $(".borderwrap").height($(document).height()-40)
 

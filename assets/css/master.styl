@@ -11,6 +11,7 @@ body
     background blue
     color white
     font-family DIN-Light
+    padding-bottom 20px
 
 a
     text-decoration none
@@ -35,15 +36,24 @@ a
         top 25%
         left 25%
 
+.borderwrap
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    box-sizing border-box
+
 .borders
     box-sizing border-box
     padding 0px
-    z-index 10
     position relative
     height 100%
+    margin-bottom 20px
     div
         background white
         position absolute
+        z-index 10
     .l,.r
         width bordersize
         background white
@@ -80,7 +90,7 @@ h1
     margin-bottom: 0
 
 h2
-    font-family: DIN-Regular;
+    font-family: DIN-Light;
     font-size: 56px;
     color: #FFFFFF;
     line-height: 68px;
@@ -99,12 +109,50 @@ h3
     width 100%
     overflow hidden
     position relative
-    padding 0 80px
+    padding 0 80px 30px 80px
     box-sizing border-box
+
+    a
+        color white
+
 
 .wrap, header, .borders
     max-width maxwidth
     margin 0px auto
+
+
+.upper
+    text-transform uppercase
+
+.small
+    font-family DIN-Light
+    font-size 18px
+
+
+.button
+    background white
+    font-family DIN-Bold
+    font-size 29px
+    color blue
+    padding 20px 23px 19px 23px
+    text-transform uppercase
+    display inline-block
+    margin-right 25px
+    text-decoration none
+
+    &.white
+        color blue
+
+    &.small
+        padding 0
+        background transparent
+        font-family DIN-Light
+        font-size 18px
+        position relative
+        bottom 3px
+
+        &:hover
+            border-bottom 1px solid white
 
 
 .wrap
@@ -113,16 +161,6 @@ h3
 
 .leader
     padding-top 150px
-
-.borderwrap
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    box-sizing border-box
-    z-index 10
-
 
 #headwrap
     padding 0 25px
@@ -152,7 +190,7 @@ header
             margin-left -500px
         &.right
             right 50%
-            margin-right -560px
+            margin-right -540px
 
         a
             margin 0 15px

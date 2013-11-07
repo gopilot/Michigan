@@ -12,7 +12,7 @@
 
   require(['jquery'], function($) {
     console.log('jquery loaded (via assets/js/main.coffee)');
-    return $(".borderwrap").height($(document).height());
+    return $(".borderwrap").height($(document).height() - 40);
   });
 
 }).call(this);
