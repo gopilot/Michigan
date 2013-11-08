@@ -429,6 +429,16 @@ header {
   display: inline-block;
   margin-right: 25px;
   text-decoration: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -webkit-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: -o-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: linear-gradient(top, #fff 0%, #ddd 100%);
+  border: 1px solid #fff;
+}
+.button:hover {
+  border: 1px solid #fff;
 }
 .button.white {
   color: #78bae2;
@@ -440,6 +450,7 @@ header {
   font-size: 18px;
   position: relative;
   bottom: 3px;
+  border: 0px;
 }
 .button.small:hover {
   border-bottom: 1px solid #fff;
@@ -536,6 +547,9 @@ header h1 a {
 .faq p {
   margin-top: 0;
   font-family: DIN-Light;
+}
+.prizes {
+  padding-bottom: 0;
 }
 .prizes h4 {
   text-align: center;
@@ -654,16 +668,14 @@ header h1 a {
   }
 }
 @media (max-width: 1000px) {
-  .prizes .other li {
-    text-align: center;
+  .prizes {
+    padding-bottom: 20px;
   }
   .prizes .other li h5 {
-    text-align: center;
     font-size: 25px;
   }
   .prizes .other li span {
     display: block;
-    text-align: center;
     font-size: 18px;
   }
 }
@@ -698,6 +710,10 @@ header h1 a {
     padding: 0;
     margin: 0.5em 0;
     border-width: 0px !important;
+  }
+  .prizes .other li h5,
+  .prizes .other li span {
+    text-align: center;
   }
 }
 @media (max-width: 800px) {
