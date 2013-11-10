@@ -5,6 +5,7 @@ html
         meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
         meta(name='description', content='description of your site')
         meta(name='author', content= "author of the site")
+        <meta name="viewport" content="width=device-width, user-scalable=false, initial-scale=1, maximum-scale=1">
 
         title= title
 
@@ -18,14 +19,15 @@ html
                 .t
         #headwrap
             header
-                nav.left
-                    a(href="#") About
-                    a(href="#") FAQ
                 h1
                     a(href='#') Pilot + HackMIT
-                nav.right
-                    a(href="#") Register
-                    a(href="#") Sponsor
+                nav
+                    .left
+                        a(href="#") About
+                        a(href="#") FAQ
+                    .right
+                        a(href="#") Register
+                        a(href="#") Sponsor
 
         .section.leader(style="background-image: url(img/pic1.jpg)")
             .wrap

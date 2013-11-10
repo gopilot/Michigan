@@ -10,7 +10,7 @@
     h3
         font-size 30px
     header
-        nav
+        nav div
             &.left
                 margin-left -400px
 
@@ -48,7 +48,7 @@
         padding-left 40px
         padding-right 40px
     header
-        nav
+        nav div
             a
                 font-size 20px
             &.left
@@ -80,7 +80,7 @@
         &.small
             font-size 15px
     header
-        nav
+        nav div
             a
                 font-size 20px
             &.left
@@ -97,16 +97,43 @@
                 background-size contain
 
 @media(max-width: 768px)
+    #headwrap
+        padding 0 10px
     .borders
         display none
 
     .wrap
-        padding-left 20px
-        padding-right 20px
+        padding-left 10px
+        padding-right 10px
     h1
         font-size 40px
     h3
         font-size 21px
+
+    header
+        h1
+            border 0px
+        nav 
+            div
+                position static
+
+                &.left, &.right
+                    margin-left 0
+                    margin-right 0
+                    display inline-block
+
+                a
+                    padding 15px 10px
+                    margin 0
+                    font-size 15px
+
+                    &:hover
+                        border 0
+
+            border-top 2px solid white
+            padding 10px 0
+
+
 
 @media(max-width: 550px)
     .prizes
