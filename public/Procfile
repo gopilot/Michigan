@@ -1,1 +1,1 @@
-/Users/gabeboning/Pilot/boston/Procfile
+web: node server.js
